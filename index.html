@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta https-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ebay template</title>
+<!-- ======= google fonts ======= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- ======= css ======= -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style type="text/css">
+.csslider>ul,
+.csslider>ul>li {
+box-sizing: border-box;
+position: relative;
+overflow: hidden
+}
+
+.csslider ul li img,
+.csslider>.navigation label img {
+max-height: 100%;
+top: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+position: absolute;
+left: 0
+}
+
+*,
+.menu-part ul li a,
+.pro-title>h2,
+.product-dec h5,
+p {
+font-family: 'Open Sans', sans-serif
+}
+
+.csslider>ul,
+.csslider>ul>li,
+.header-wraper,
+.main-div,
+.product-wraper {
+overflow: hidden
+}
+
+*,
+p {
+font-size: 14px
+}
+
+a,
+a:focus,
+a:hover {
+outline: 0;
+text-decoration: none
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul {
+margin: 0;
+padding: 0;
+line-height: 1.3
+}
+.product-wraper table,
+.product-wraper table tr,
+.product-wraper table tr td{
+padding: 20px;
+border: 1px solid #000;
+}
+img {
+max-width: 100%;
+max-height: 100%
+}
+.logo {
+	padding: 30px 0;
+}
+.menu-part {
+text-align: right;
+padding: 60px 0
+}
+
+.csslider>ul>li,
+.gallery-content,
+.pro-title,
+label {
+text-align: center
+}
+
+.menu-part ul {
+display: inline-block;
+padding: 0
+}
+
+.menu-part ul li {
+display: inline-block;
+list-style: none
+}
+
+.menu-part ul li a {
+color: #1a1a1a;
+display: block;
+font-size: 22px;
+text-decoration: none;
+text-transform: uppercase;
+transition: .5s;
+border-bottom: 2px solid #fff;
+padding: 0 10px;
+font-weight: 800
+}
+
+.menu-part ul li:last-child a {
+margin-right: 0
+}
+
+.pro-title {
+background-color: #000;
+border-radius: 5px;
+padding: 15px 30px;
+margin: 0 0 30px
+}
+
+.pro-title>h2 {
+font-size: 24px;
+margin: 0;
+font-weight: 700;
+color: #fff
+}
+
+input {
+display: none
+}
+
+.product-dec h3,
+.product-dec h4 {
+font-weight: 700;
+font-size: 20px;
+color: #1a1a1a
+}
+
+.product-dec h3:first-child{
+margin-top: 0;
+}
+.product-wraper {
+border: 1px solid #d1d1d1;
+padding: 30px;
+}
+
+.product-dec h3 {
+text-transform: capitalize;
+margin: 30px 0 20px
+}
+
+.product-dec h4 {
+line-height: 1.3;
+margin-bottom: 20px
+}
+
+.product-dec h5,
+label {
+font-size: 16px;
+font-weight: 600
+}
+
+.product-dec h5 {
+color: #1a1a1a;
+line-height: 1.3;
+margin-bottom: 5px
+}
+
+.product-dec ul,
+.tab-list ul {
+margin: 0;
+padding: 0
+}
+    .product-dec ul{
+        margin-top: 30px;
+    }
+
+.product-dec ul li,
+.tab-list ul li {
+position: relative;
+padding-left: 20px;
+list-style: none;
+margin-bottom: 15px
+}
+
+.product-dec ul li::before,
+.tab-list ul li::before {
+position: absolute;
+left: 0;
+content: "\f046";
+color: #000;
+font-family: fontawesome;
+font-weight: 400
+}
+
+.tab-part-area {
+padding: 50px 0 30px
+}
+
+section.tab-section {
+display: none;
+padding: 40px 45px;
+border: 1px solid #ddd;
+color: #1a1a1a;
+overflow: hidden
+}
+
+input:checked+label,
+label:hover {
+color: #fff !important;
+border: 1px solid #000;
+background-color: #000
+}
+
+label {
+color: #000;
+border: 1px solid #ddd;
+display: inline-block;
+margin: 0 0 -1px;
+padding: 10px 30px;
+text-transform: uppercase;
+background-color: #f8f8fa;
+transition: .5s
+}
+
+label:hover {
+cursor: pointer;
+color: #000
+}
+
+input:checked+label {
+color: #000
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4,
+#tab5:checked~#content5 {
+display: block
+}
+
+.tab-section p a {
+color: #000;
+font-weight: 600;
+text-decoration: underline
+}
+
+.footer-area p {
+background-color: #000;
+padding: 20px 0
+}
+
+.footer-area p,
+.footer-area p a {
+font-size: 16px;
+font-weight: 600;
+color: #fff
+}
+
+.footer-area p a {
+color: #fff
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+.logo,
+.menu-part {
+text-align: center
+}
+
+.menu-part {
+padding: 0 0 30px
+}
+}
+
+@media only screen and (max-width:767px) {
+
+*,
+.footer-area p,
+.footer-area p a,
+p {
+font-size: 17px
+}
+
+.gallery-content {
+height: auto
+}
+
+.logo {
+text-align: center
+}
+
+.menu-part {
+text-align: left;
+padding-top: 0;
+padding-bottom: 20px
+}
+
+.menu-part ul li {
+display: block;
+text-align: left
+}
+
+.menu-part ul li a {
+font-size: 16px !important;
+padding: 0 0 10px;
+margin: 0;
+border-bottom: 0
+}
+
+.pro-title>h2,
+.product-dec h3 {
+font-size: 18px
+}
+
+.product-wraper {
+padding: 0 20px 30px
+}
+
+.product-dec {
+margin-top: 30px
+}
+
+.des-content h1,
+.des-content h2,
+.product-dec h4 {
+font-size: 16px
+}
+
+.des-content {
+padding: 15px
+}
+
+label {
+display: block
+}
+
+section.tab-section {
+padding: 20px
+}
+
+.ex {
+margin: 0;
+padding: 0
+}
+
+.csslider>ul>li {
+height: 305px
+}
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="main-div">
+<!-- ======= header area start ======= -->
+<header class="header-area">
+<div class="header-wraper">
+<div class="container">
+<div class="row">
+<!-- header wraper start -->
+<div class="col-md-3">
+<!-- logo start -->
+<div class="logo">
+<a href="https://www.ebay.com/str/kbnsell" target="_blank"><img src="logo.png" alt=""></a>
+</div>
+<!-- logo end -->
+</div>
+<div class="col-md-9">
+<!-- menu start -->
+<div class="menu-part">
+<nav>
+<ul>
+<li><a href="https://www.ebay.com/str/kbnsell" target="_blank">shop products</a></li>
+<li><a href="https://www.ebay.com/str/kbnsell#tab1" target="_blank">about us</a></li>
+<li><a href="https://www.ebay.com/str/kbnsell#tab2" target="_blank">feedback</a></li>
+<li><a href="https://www.ebay.com/cnt/intermediatedFAQ?requested=kbnsell" target="_blank">contact us</a></li>
+</ul>
+</nav>
+</div>
+<!-- menu end -->
+</div>
+</div>
+<!-- header wraper end -->
+</div>
+</div>
+</header>
+<!-- ======= header area end ======= -->
+
+<!-- ======= product title area start ======= -->
+<section class="gallery-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="pro-title">
+<h2>
+
+<!-- product title start -->
+
+Purple Toothpaste for Teeth Whitening V34 Color Corrector, Teeth Cleaning
+
+<!-- product title end -->
+
+</h2>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======= product title area end ======= -->
+
+<!-- ======= product images area start ======= -->
+<section class="product-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<!-- product wraper star -->
+<div class="product-wraper">
+<div class="col-md-6">
+<!-- images gallery part start -->
+<div class="gallery-content text-center">
+
+<img src="https://i.ebayimg.com/00/s/MTUwMFgxMzA3/z/t2IAAOSwPGljFlgI/$_3.PNG" alt="">
+
+</div>
+<!-- images gallery part end -->
+</div>
+
+<div class="col-md-6 ex">
+<div class="product-dec">
+
+<!-- product discription part start -->
+
+<h3>Description:</h3>
+<table>
+
+<tbody>
+<tr>
+<td>Color</td>
+<td>1 Pc</td>
+</tr>
+
+<tr>
+<td>Item Form</td>
+<td>Cream</td>
+</tr>
+
+<tr>
+<td>Package Type</td>
+<td>Bottle</td>
+</tr>
+
+</tbody></table>
+
+<ul><li>Teeth Cleansing Toothpaste - Effectively help teeth cleaning and make your smile more beautiful！</li><li>Material - Purple toothpaste provides an obvious whitening effect for your teeth, provides protection for your teeth.</li><li>Easy To Carry And Use - This purple toothpaste has been designed with a small compact size, and is lightweight. The bottle mouth press-type design makes it more convenient for use.</li><li>Great Gift - Purple toothpaste for teeth whitening, is a perfect gift for your family, friends, etc.</li></ul>
+<p>1.38 inches x 5.0 inches x 1.34 inches. Weight: 3.21 oz</p>
+<!-- product discription part end -->
+
+</div>
+</div>
+</div>
+<!-- product wraper end -->
+</div>
+</div>
+</div>
+</section>
+<!-- ======= product images area end ======= -->
+
+<div class="tab-part-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="tab-area">
+<input id="tab1" name="tabs" checked="" type="radio">
+<label for="tab1">Shipping policy</label>
+<input id="tab2" name="tabs" type="radio">
+<label for="tab2">Returns policy</label>
+<input id="tab3" name="tabs" type="radio">
+<label for="tab3">CUSTOMER SATISFACTION</label>
+<input id="tab4" name="tabs" type="radio">
+<label for="tab4">contact us</label>
+
+<!-- tab info start -->
+<section id="content1" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<p>To make sure your shipment comes as fast as possible, we always put out great effort. Please be aware that we have no control over some conditions, such as the weather, heavy postal traffic, and the performance of shipping firms.</p>
+<p>Free delivery is available to the lower 48 states, and orders are typically shipped within two business days after being paid.</p>
+</div>
+</div>
+</section>
+<!-- tab info end -->
+
+<!-- tab info start -->
+<section id="content2" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<p>We have a 30-day return policy starting from the winning checkout date. Your happiness is assured! Simply return your item within 30 days for a full refund, minus shipping costs, if you are unhappy with it for any reason. To receive a refund authorization, get in touch with us before starting a return.</p>
+<p>Items that are defective when received must be returned with a thorough explanation of the issue and wrapped in their retail packaging as if they were brand new. Shipping costs for returns are NOT reimbursed. In the event that the aforementioned rules are not fulfilled, we have the right to refuse any returns.</p>
+</div>
+</div>
+</section>
+<!-- tab info end -->
+
+<!-- tab info start -->
+<section id="content3" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<p>To ensure that every customer is entirely happy, we make every effort possible. Contact us if there's a problem! We are glad to assist.</p>
+</div>
+</div>
+</section>
+<!-- tab info end -->
+
+<!-- tab info start -->
+<section id="content4" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<p>Please feel free to contact us to discuss anything that you may have a question about.</p>
+<p>Contact us via the eBay messaging system <a href="https://www.ebay.com/cnt/intermediatedFAQ?requested=kbnsell" target="_blank">here.</a></p>
+</div>
+</div>
+</section>
+<!-- tab info end -->
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ======= footer area star ======= -->
+<footer class="footer-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<p>© Copyright All Rights Reserved - <a href="https://www.ebay.com/str/kbnsell" target="_blank">kbnsell</a></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- ======= footer area end ======= -->
+</div>
+</body>
+
+</html>
